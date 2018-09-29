@@ -10,8 +10,7 @@ class Currency {
 protected: //so derived class can read it too
 	string currency_name, fractional_name;
 	int whole_parts, frac_parts;
-	 // for 5 currencies for wallet
-
+	
 public:
 
 	string getCurrencyName();
