@@ -6,6 +6,6 @@ I did the overloaded operator for '+' and '-'  in each derived class (not yet us
 I also did the overloaded input and output operator 
 
 Did NOT do YET list:
-1. Finish header class for Currency.
+1. Finish Currency.h
 2. Seperate main() from Currency.cpp.
 3. Wallet class and its functions (Storing Money)
