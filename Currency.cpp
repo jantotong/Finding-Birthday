@@ -68,7 +68,6 @@ public:
 		x.whole_parts = whole_parts + dollar.whole_parts;
 		whole_parts++;
 		x.frac_parts = frac_parts + dollar.frac_parts;
-		whole_parts++;
 		return x;
 	}
 
