@@ -10,7 +10,7 @@ class Currency {
 protected: //so derived class can read it too
 	string currency_name, fractional_name;
 	int whole_parts, frac_parts;
-	
+
 public:
 
 	string getCurrencyName();
@@ -307,12 +307,12 @@ int main()
 
 		if (answer1 >= 1 && answer1 <= 2)
 		{
-			cout << "Select the type of currency: " << endl;
+			cout << endl << "Select the type of currency: " << endl;
 			cout << "1. Dollar" << endl;
 			cout << "2. Euro" << endl;
 			cout << "3. Yen" << endl;
 			cout << "4. Rupee" << endl;
-			cout << "5. Yuan" << endl;
+			cout << "5. Yuan" << endl << endl;
 			cout << "Please Enter: ";
 			cin >> answer2;
 		}
