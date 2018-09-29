@@ -1,3 +1,4 @@
+//not done yet
 #define CURRENCY_H
 #ifndef CURRENCY_H
 #include <string>
