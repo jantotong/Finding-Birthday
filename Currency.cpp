@@ -384,7 +384,7 @@ int main()
 
 			else if (answer2 == 5)
 			{
-				cout << "Please enter amount of Yuans & Fens: " << endl;
+				cout << "Please enter amount of Yuans: " << endl;
 				cin >> yuan;
 				cout << yuan;
 			}
