@@ -12,15 +12,12 @@ protected: //so derived class can read it too
 	int whole_parts, frac_parts;
 
 public:
-
 	string getCurrencyName();
 	string getFractionalName();
 	int getwhole_parts();
 	int getfrac_parts();
 
-	Currency() {
-		
-	}
+	Currency(){}
 
 	friend ostream& operator<<(ostream &out, const Currency &C);
 	friend istream& operator>>(istream &in, Currency &C); 
