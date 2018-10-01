@@ -1,3 +1,7 @@
+9/30 11:18PM UPDATE:
+I've finished the header files and oveerloaded operators. 
+However, I've not do anything in the wallet class yet.
+
 Did NOT do YET list:
 1. Finish Currency.h
 2. Seperate main() from Currency.cpp.
