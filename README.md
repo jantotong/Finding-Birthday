@@ -1,5 +1,4 @@
 Update 9:00pm 10/1:
-
 I added simplify() in each overloaded input stream operator and it works now.
 
 Did NOT do YET list:
