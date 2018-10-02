@@ -24,21 +24,15 @@ Currency Currency::operator-(Currency& other) {
 	Currency c = Currency(this->whole_parts, this->frac_parts);
 	c.whole_parts -= other.whole_parts;
 	c.frac_parts -= other.frac_parts;
-	try {
-		c.simplify();
-	}
-	catch (string e) {
-		throw e;
-	}
 	whole_parts = c.whole_parts;
 	frac_parts = c.frac_parts;
 	return *this;
 }
 
-double Currency::getValue() const {
-	double value = 0;
-	return value;
+void Currency::show() const {
+	cout << endl<< "Your Cu" << whole_parts << " Dollars and " << frac_parts << " Cents " << endl;
 }
+
 void Currency::simplify() {
 	if (frac_parts > 99) {
 		whole_parts += frac_parts / 100;
