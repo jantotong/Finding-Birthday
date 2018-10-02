@@ -6,8 +6,6 @@ using namespace std;
 class Currency {
 protected:
 	string currency_name, fractional_name;
-	int whole_parts, frac_parts;
-	void simplify();
 
 public:
 	Currency();
@@ -16,7 +14,9 @@ public:
 	Currency operator-(Currency& other);
 	istream& operator>>(istream& is);
 	ostream& operator<<(ostream& os);
-	double getValue() const;
+	int whole_parts, frac_parts;
+	void simplify();
+	void show() const;
 };
 
 class Dollar : public Currency { //Derived class
@@ -39,12 +39,13 @@ public:
 		cout << "Now enter cents: " << endl;
 		cin >> D.frac_parts;
 		D.simplify();
+
 		return in;
 	}
 
 	friend ostream &operator<<(ostream &out, const Dollar &D) //overloaded out stream operator
 	{
-		out << "Current savings for Dollars: " << D.whole_parts << " Dollars and " << D.frac_parts << " Cent" << endl;
+		out << "A transaction of  " << D.whole_parts << " Dollars and " << D.frac_parts << " Cent has been made" << endl;
 		return out;
 	}
 };
@@ -74,7 +75,7 @@ public:
 
 	friend ostream &operator<<(ostream &out, const Euro &E)  //overloaded out stream operator
 	{
-		out << "Current Savings for Euro: " << E.whole_parts << " Euros and " << E.frac_parts << " Cent" << endl;
+		out << "A transaction of  " << E.whole_parts << " Euros and " << E.frac_parts << " Cent has been made" << endl;
 		return out;
 	}
 };
@@ -105,7 +106,7 @@ public:
 
 	friend ostream &operator<<(ostream &out, const Yen &Y)  //overloaded output operator
 	{
-		out << "Current Savings for Yen: " << Y.whole_parts << " Yen and " << Y.frac_parts << " Sen" << endl;
+		out << "A transaction of  " << Y.whole_parts << " Yen and " << Y.frac_parts << " Sen has been made" << endl;
 		return out;
 	}
 };
@@ -136,7 +137,7 @@ public:
 
 	friend ostream &operator<<(ostream &out, const Rupee &R)   //overloaded output operator
 	{
-		out << "Current Savings for Rupee: " << R.whole_parts << " Rupee and " << R.frac_parts << " Paise" << endl;
+		out << "A transaction of  " << R.whole_parts << " Rupee and " << R.frac_parts << " Paise has been made" << endl;
 		return out;
 	}
 };
@@ -166,9 +167,8 @@ public:
 
 	friend ostream &operator<<(ostream &out, const Yuan &Y)
 	{  //overloaded output operator
-		out << "Current Savings for Yuan: " << Y.whole_parts << " Yuan and " << Y.frac_parts << " Fen" << endl;
+		out << "A transaction of  " << Y.whole_parts << " Yuan and " << Y.frac_parts << " Fen has been made" << endl;
 		return out;
 	}
 };
-
 #endif
