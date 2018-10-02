@@ -1,7 +1,6 @@
-Update 9:00pm 10/1:
+Update 12:40pm 10/2:
 
-I added simplify() in each overloaded input stream operator and it works now.
-
+I'm done with the wallet. Took way longer than expected. lol
 
 Did NOT do YET list:
 1. Wallet class and its functions (Storing Money)
