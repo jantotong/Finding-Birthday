@@ -3,7 +3,10 @@
 #include <iostream>
 #include <cstdlib>
 
+
 using namespace std;
+
+
 
 Wallet::Wallet() {
 	Dollar = Currency(0, 0);
@@ -51,3 +54,4 @@ void Wallet::removeAll(){
 	}
 	cout << endl << "Wallet has been emptied" << endl << endl;
 }
+
