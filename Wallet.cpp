@@ -54,4 +54,3 @@ void Wallet::removeAll(){
 	}
 	cout << endl << "Wallet has been emptied" << endl << endl;
 }
-
