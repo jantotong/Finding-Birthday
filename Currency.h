@@ -92,22 +92,6 @@ public:
 
 	~Yen() {}; // destructor to empty dollars in wallet
 
-	Yen operator+(const Yen &yen) //overloaded operator
-	{
-		Yen x;
-		x.whole_parts = whole_parts + yen.whole_parts;
-		x.frac_parts = frac_parts + yen.frac_parts;
-		return x;
-	}
-
-	Yen operator-(const Yen &yen1) //overloaded operator
-	{
-		Yen x;
-		x.whole_parts = whole_parts - yen1.whole_parts;
-		x.frac_parts = frac_parts - yen1.frac_parts;
-		return x;
-	}
-
 	friend istream &operator>>(istream &in, Yen &Y)  //overloaded  input operator
 	{
 		cin >> Y.whole_parts;
@@ -138,23 +122,6 @@ public:
 
 	~Rupee() {}; // destructor 
 
-	Rupee operator+(const Rupee &rupee) //overloaded operator
-	{
-		Rupee x;
-		x.whole_parts = whole_parts + rupee.whole_parts;
-		x.frac_parts = frac_parts + rupee.frac_parts;
-		return x;
-	}
-
-	Rupee operator-(const Rupee &rupee1)  //overloaded operator
-
-	{
-		Rupee x;
-		x.whole_parts = whole_parts - rupee1.whole_parts;
-		x.frac_parts = frac_parts - rupee1.frac_parts;
-		return x;
-	}
-
 	friend istream &operator>>(istream &in, Rupee &R)  //overloaded input operator
 	{
 		cin >> R.whole_parts;
@@ -183,22 +150,6 @@ public:
 	}
 
 	~Yuan() {}; // destructor
-
-	Yuan operator+(const Yuan &yuan) //overloaded operator
-	{
-		Yuan tempYuan;
-		tempYuan.whole_parts = whole_parts + yuan.whole_parts;
-		tempYuan.frac_parts = frac_parts + yuan.frac_parts;
-		return tempYuan;
-	}
-
-	Yuan operator-(const Yuan &yuan1)  //overloaded operator
-	{
-		Yuan tempYuan1;
-		tempYuan1.whole_parts = whole_parts - yuan1.whole_parts;
-		tempYuan1.frac_parts = frac_parts - yuan1.frac_parts;
-		return tempYuan1;
-	}
 
 	friend istream &operator>>(istream &in, Yuan &Y)  //overloaded input operator
 	{
