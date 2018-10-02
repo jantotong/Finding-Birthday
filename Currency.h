@@ -38,6 +38,7 @@ public:
 		cin >> D.whole_parts;
 		cout << "Now enter cents: " << endl;
 		cin >> D.frac_parts;
+		D.simplify();
 		return in;
 	}
 
@@ -67,6 +68,7 @@ public:
 		cin >> E.whole_parts;
 		cout << "Now enter Cents: " << endl;
 		cin >> E.frac_parts;
+		E.simplify();
 		return in;
 	}
 
@@ -97,6 +99,7 @@ public:
 		cin >> Y.whole_parts;
 		cout << "Now enter Sen: " << endl;
 		cin >> Y.frac_parts;
+		Y.simplify();
 		return in;
 	}
 
@@ -127,6 +130,7 @@ public:
 		cin >> R.whole_parts;
 		cout << "Now enter Paise: " << endl;
 		cin >> R.frac_parts;
+		R.simplify();
 		return in;
 	}
 
@@ -156,6 +160,7 @@ public:
 		cin >> Y.whole_parts;
 		cout << "Now enter Fen: " << endl;
 		cin >> Y.frac_parts;
+		Y.simplify();
 		return in;
 	}
 
