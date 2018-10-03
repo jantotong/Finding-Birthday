@@ -53,7 +53,10 @@ public:
 class Euro : public Currency {
 
 public:
-	Euro() {}
+	Euro() {
+		currency_name = "Euro";
+		fractional_name = "Cent";
+	}
 	Euro(int x, int y) //constructor
 	{
 		currency_name = "Euro";
