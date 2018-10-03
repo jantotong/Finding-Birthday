@@ -29,10 +29,6 @@ Currency Currency::operator-(Currency& other) {
 	return *this;
 }
 
-void Currency::show() const {
-	cout << endl<< "Your Cu" << whole_parts << " Dollars and " << frac_parts << " Cents " << endl;
-}
-
 void Currency::simplify() {
 	if (frac_parts > 99) {
 		whole_parts += frac_parts / 100;
