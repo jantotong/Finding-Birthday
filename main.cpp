@@ -10,9 +10,6 @@ using std::ifstream;
 using std::endl;
 using std::getline;
 
-//Name: Jan To Tong
-//Make-up lab for Lab 3
-
 int main() {
 	HashMap<string> hash(12);
 	ifstream infile;
